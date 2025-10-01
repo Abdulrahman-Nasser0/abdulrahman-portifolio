@@ -3,8 +3,7 @@
 // Wrapper around next-cloudinary that gracefully degrades when env vars are missing
 import React from 'react';
 import { CldImage as RealCldImage, CldVideoPlayer as RealCldVideoPlayer } from 'next-cloudinary';
-
-
+// import-group-separator
 const hasCloudName = !!process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
 
 function Placeholder({ className, style, alt = 'media placeholder', fill, width, height, type = 'image' }) {

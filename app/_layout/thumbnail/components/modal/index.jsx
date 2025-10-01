@@ -6,8 +6,8 @@ import { motion } from 'framer-motion';
 
 import { Center } from '@/components';
 import { thumbnailOptions } from '@/data';
-import { randomId } from '@/utils';
 import { CldImage } from '@/lib';
+import { randomId } from '@/utils';
 
 const MotionComponent = motion(Center);
 
