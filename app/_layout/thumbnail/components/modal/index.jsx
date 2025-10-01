@@ -3,7 +3,7 @@
 import { forwardRef } from 'react';
 
 import { motion } from 'framer-motion';
-import { CldImage } from 'next-cloudinary';
+import { CldImage } from '@/_lib/cloudinary';
 
 import { Center } from '@/components';
 import { thumbnailOptions } from '@/data';
