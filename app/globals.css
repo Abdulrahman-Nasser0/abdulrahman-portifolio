@@ -38,9 +38,10 @@
   *::-webkit-scrollbar-thumb {
     background-color: theme(colors.secondary.foreground);
     border-radius: theme(borderRadius.full);
+  }
 
-    &:hover {
-      background-color: theme(colors.secondary.DEFAULT);
-    }
+  /* Unnested hover state for better PostCSS compatibility */
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: theme(colors.secondary.DEFAULT);
   }
 }
