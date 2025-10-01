@@ -28,7 +28,7 @@
 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
-    width: theme('width.1.5');
+    width: theme('width[1.5]');
   }
 
   *::-webkit-scrollbar-track {
