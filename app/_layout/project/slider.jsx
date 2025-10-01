@@ -1,7 +1,6 @@
 'use client';
 
 import { CldImage, CldVideoPlayer } from '@/lib';
-import 'next-cloudinary/dist/cld-video-player.css';
 
 import { Center } from '@/components';
 
