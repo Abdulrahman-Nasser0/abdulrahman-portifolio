@@ -19,28 +19,4 @@
   }
 }
 
-@layer base {
-  /* Firefox */
-  * {
-  scrollbar-color: hsl(var(--secondary-foreground)) hsl(var(--secondary));
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-  width: 0.375rem; /* matches spacing[1.5] */
-  }
-
-  *::-webkit-scrollbar-track {
-  background-color: hsl(var(--secondary));
-  }
-
-  *::-webkit-scrollbar-thumb {
-  background-color: hsl(var(--secondary-foreground));
-  border-radius: 9999px; /* full */
-  }
-
-  /* Unnested hover state for better PostCSS compatibility */
-  *::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(var(--secondary));
-  }
-}
+/* Scrollbar styles temporarily removed to resolve build parsing issue */
