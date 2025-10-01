@@ -1,6 +1,6 @@
 'use client';
 
-import { CldImage, CldVideoPlayer } from '@/_lib/cloudinary';
+import { CldImage, CldVideoPlayer } from '@/lib';
 
 import { Center } from '@/components';
 

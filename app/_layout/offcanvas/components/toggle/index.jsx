@@ -8,8 +8,6 @@ import { MagneticButton } from '@/components';
 import { useOffcanvasToggle } from '@/hooks';
 import { cn } from '@/utils';
 
-import classes from './index.module.css';
-
 /**
  * @param {Object} props
  * @param {boolean} props.isOpen
@@ -26,7 +24,7 @@ export function OffcanvasToggle({ isOpen, handleOpen }) {
   return (
     <motion.div
       ref={containerRef}
-      className={classes.wrapper}
+      className='fixed right-0 top-0 z-40 m-6'
       initial={false}
       transition={{
         duration: 1,
@@ -40,9 +38,20 @@ export function OffcanvasToggle({ isOpen, handleOpen }) {
         className='border border-solid border-muted-foreground'
         onClick={() => handleOpen(!isOpen)}
       >
-        <span
-          className={cn([classes.burger], [isOpen && classes.burgerActive])}
-        />
+        <span className='relative inline-block h-4 w-8'>
+          <span
+            className={cn(
+              'absolute left-0 top-0 block h-[2px] w-full bg-background transition-transform duration-300 ease-in-expo',
+              isOpen && 'top-1/2 -translate-y-1/2 -rotate-45',
+            )}
+          />
+          <span
+            className={cn(
+              'absolute bottom-0 left-0 block h-[2px] w-full bg-background transition-transform duration-300 ease-in-expo',
+              isOpen && 'bottom-1/2 translate-y-1/2 rotate-45',
+            )}
+          />
+        </span>
         <span className='sr-only focus:not-sr-only'>Offcanvas Toggle</span>
       </MagneticButton>
     </motion.div>

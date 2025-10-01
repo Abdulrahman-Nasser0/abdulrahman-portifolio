@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { MoveDownRight } from 'lucide-react';
-import { CldImage } from '@/_lib/cloudinary';
+import { CldImage } from '@/lib';
 
 import { ParallaxSlider } from '@/components';
 
