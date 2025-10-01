@@ -3,11 +3,11 @@
 import { forwardRef } from 'react';
 
 import { motion } from 'framer-motion';
-import { CldImage } from '@/lib';
 
 import { Center } from '@/components';
 import { thumbnailOptions } from '@/data';
 import { randomId } from '@/utils';
+import { CldImage } from '@/lib';
 
 const MotionComponent = motion(Center);
 

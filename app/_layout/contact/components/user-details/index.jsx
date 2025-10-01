@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion';
 import { ArrowDownLeft } from 'lucide-react';
 import Link from 'next/link';
-import { CldImage } from '@/lib';
 
 import { MagneticButton } from '@/components';
+import { CldImage } from '@/lib';
 
 import { Container, ImageWrapper, MainTitle, Row } from './index.styled';
 

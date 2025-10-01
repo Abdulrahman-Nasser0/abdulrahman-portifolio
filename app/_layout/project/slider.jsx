@@ -1,8 +1,7 @@
 'use client';
 
-import { CldImage, CldVideoPlayer } from '@/lib';
-
 import { Center } from '@/components';
+import { CldImage, CldVideoPlayer } from '@/lib';
 
 /**
  * @param {Object} props
