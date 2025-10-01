@@ -2,9 +2,9 @@
 
 import { motion } from 'framer-motion';
 import { MoveDownRight } from 'lucide-react';
-import { CldImage } from 'next-cloudinary';
 
 import { ParallaxSlider } from '@/components';
+import { CldImage } from '@/lib';
 
 import { slideUp } from './variants';
 

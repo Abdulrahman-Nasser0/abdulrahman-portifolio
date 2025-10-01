@@ -3,10 +3,10 @@
 import { forwardRef } from 'react';
 
 import { motion } from 'framer-motion';
-import { CldImage } from 'next-cloudinary';
 
 import { Center } from '@/components';
 import { thumbnailOptions } from '@/data';
+import { CldImage } from '@/lib';
 import { randomId } from '@/utils';
 
 const MotionComponent = motion(Center);

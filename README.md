@@ -107,3 +107,15 @@ Don't forget to give the project a star! Thanks again!
 </p>
 
 <p align="right">(<a href="#top">BACK TO TOP🔝</a>)</p>
+
+## Upgrades
+
+- Next.js 15
+- React 19
+- Tailwind CSS 3.4
+
+If you see a Browserslist warning during build, update the database:
+
+```bash
+npx update-browserslist-db@latest
+```
